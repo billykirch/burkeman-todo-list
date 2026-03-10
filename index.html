@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&family=Roboto+Condensed:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>To-Do List</h1>
+        </div>
+
+        <!-- Selected Items Section -->
+        <div class="selected-section">
+            <h3 class="selected-section-header">Here's what's important:</h3>
+            <div class="selected-items" id="selectedItems">
+                <!-- Selected items will be rendered here -->
+            </div>
+        </div>
+
+        <!-- Utility Buttons -->
+        <div class="utility-buttons">
+            <button class="utility-btn clock" id="pendingBtn" title="Pending Items">Pending Items</button>
+            <button class="utility-btn check" id="completedBtn" title="Completed Items">Completed Items</button>
+        </div>
+        
+        <div class="page-header">
+            <h1><span>for clinical procrastinators managing existential finitude</span></h1>
+        </div>
+
+        <!-- Inventory Section -->
+        <div class="inventory-section">
+            <h3 class="inventory-section-header">Here's where the other stuff goes:</h3>
+            <div class="inventory-items" id="inventoryItems">
+                <!-- Inventory items will be rendered here -->
+            </div>
+        </div>
+        <div class="attribution-text">
+            <p>
+                Developed from concepts in Oliver Burkeman's <a style="color:#E2E9FF" href="https://www.oliverburkeman.com/fourthousandweeks"><i>Four Thousand Weeks</i></a> © 2024
+            </p>
+            <p>
+                Put to color and code by Billy Kirchgessner © 2026
+            </p>
+        </div>
+    </div>
+
+    <!-- Overlay for Pending/Completed/Add -->
+    <div class="overlay" id="overlay">
+        <div class="overlay-content" id="overlayContent">
+            <!-- Dynamic content will be loaded here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
